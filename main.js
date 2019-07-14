@@ -12,11 +12,13 @@ Ex:  hello(null) => null
 
 */
 
-function hello() {
-  // WRITE YOUR CODE UNDER THIS LINE  
-
+function hello (name) {
+  var x= "HELLO"
+  if (name.length>1)
+return x + " "+ name
+else 
+return "null"
 }
-
 
 /* Q2:
 Create a function called calculateTax
@@ -32,8 +34,14 @@ Ex: calculateTax(100,0.15)
 => "You got 100 JD from sales, you should pay 15 JD for tax and you will have 85 JD as net sales."
 */
 
-function calculateTax() {
-  // WRITE YOUR CODE UNDER THIS LINE 
+function calculateTax(sales) {
+  if (sales===0)
+  return sales
+  var taxes = (sales*.16)
+  var profit= (sales - taxes)
+
+  return "You Got "+ sales+ "JD from sales ,"+ "you should pay"+ taxes+ "JD for taxe and you will have"+ profit+ "JD as net sales"
+
 
 }
 
