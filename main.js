@@ -60,8 +60,29 @@ Ex: repeatChar("a",2); => "a, A"
 Ex: repeatChar("C",5); => "C, c, C, c, C"
 */
 
-function repeatChar() {
-  // WRITE YOUR CODE UNDER THIS LINE         
+function repeatChar(str, num) {
+
+  var x = str;
+ 
+  while (num>= str.length) {
+ 
+    var y = '';
+ 
+    if (str === x.toLowerCase()) {
+      y = str.toUpperCase();
+    } else if (str === x.toUpperCase()) {
+      y = str.toLowerCase();
+    }
+ 
+    char = x + ', ' + y;
+ 
+ 
+    --num;
+ 
+  }
+ 
+  return char;
+ 
 
 }
 
@@ -81,7 +102,8 @@ Ex: stringToCapital("Are you a student in coding ACADEMY by ORANGE ?")
 */
 
 function stringToCapital() {
-  // WRITE YOUR CODE UNDER THIS LINE         
+  // WRITE YOUR CODE UNDER THIS LINE  
+
 
 }
 
